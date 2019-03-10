@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0; 
+    background-color: #333 !important;
+    
+}
+.container{
+    opacity: .8;
+}
+.bg{
+    background-image: url("../images/ZEFIRO-a-bullet-train.jpg") ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.5;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.pm-0{
+    padding: 5px !important;
+    margin: 0 !important;
+}
+/*------------ Header page -----------------*/
+.header-sign{
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(27, 27, 54) !important;
+    border-radius: 25px 25px 0 0 !important;
+}
+/*--------------- Table Card ----------------*/
+.card-header{
+    background-color: rgb(100, 193, 207) !important;
+    font-weight:bold;
+    color: rgb(15, 108, 122); 
+}
+.card-header h4{
+    display: inline;
+    padding-left: 15px;
+    line-height: 1.8em;
+}
+.table-striped tbody tr:nth-of-type(odd){
+    background-color: rgba(100, 193, 207,.15) !important;
+
+}
+.card-header a{
+    font-size: 1.8em;
+    color: rgb(255,255,255);
+    cursor: pointer;
+    float: right;
+    margin-right: 15px;
+}
+
+.card-header a:hover{
+    color: rgb(15, 108, 122);
+}
+.trash{
+    cursor: pointer;
+}
+.trash :hover{
+    color: brown !important;
+}
+/*-------------------- New Card ------------------*/
+.newCard{
+    height: 50px; 
+    overflow: hidden; 
+}
+
+.newCardOpen{
+    animation: newCardOpenAni 1s ;
+    height: 480px;
+    display: block !important;
+
+}
+@keyframes newCardOpenAni{
+    0% {
+        display: block !important;
+        height: 50px;
+    }
+    100%{height: 480px;}
+}
+
+.newCardClose{
+    animation: newCardCloseAni 1s !important;
+    height: 50px !important;
+}
+@keyframes newCardCloseAni{
+    0% {
+        height: 480px;
+    }
+    
+    100% {
+        height: 50px;
+        display: none !important;
+    }
+}

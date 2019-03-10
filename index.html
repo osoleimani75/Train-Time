@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+
+
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+
+    <div class="bg"></div>
+    <div class="container">
+
+      <div  class="jumbotron jumbotron-fluid header-sign">
+        <div class="container">
+          <h1 class="display-3 font-weight-bold">Anytime is Train Time</h1>
+        </div>
+      </div>
+      
+
+      <div class=" card border-info mb-3 newCard " >
+        <div class="card-header pm-0"><h4>Add New Train</h4></div>
+        <div  class="card-body  text-info ">
+
+            <form>
+                <div class="form-group">
+                  <label for="trainName">Train Name</label>
+                  <input type="text" class="form-control" id="trainName" >
+                </div>
+
+                <div class="form-group">
+                  <label for="destination">Destination</label>
+                  <input type="text" class="form-control" id="destination" >
+                </div>
+
+                <div class="form-group">
+                  <label for="firstTime">First Train Time (HH:mm military time)</label>
+                  <input type="text" class="form-control" id="firstTime" >
+                </div>
+
+                <div class="form-group">
+                  <label for="frequency">Frequency</label>
+                  <input type="text" class="form-control" id="frequency" >
+                </div>
+
+  
+
+
+                <button  type="submit" class="btn btn-info float-right ">Submit</button>
+                <button style="margin-right:20px !important;" type="reset" class="btn btn-info float-right ">Cancel</button>
+              </form>
+
+        </div>
+      </div>
+
+
+      <div class="card border-info mb-3" >
+        <div class="card-header pm-0 "> <h4>Current Train Schadule</h4>
+            <a id="newBtn" href="#"><i class="fas fa-folder-plus"></i></a>
+
+        </div>
+        <div class="card-body text-info">
+
+            <table class="table table-striped">
+                <thead >
+                  <tr class="text-center" >
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency(min)</th>
+                    <th scope="col">Next Arival</th>
+                    <th scope="col">Minuts Away</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                         <!-- Add Row Here -->
+                </tbody>
+              </table>
+
+
+
+         </div>
+      </div>
+
+
+
+
+    </div>
+</body>
+</html>
